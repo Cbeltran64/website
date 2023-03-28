@@ -82,6 +82,14 @@
                         <div class="form-outline mb-4">
                           <input type="email" id="form6Example5" class="form-control" required/>
                           <label class="form-label" for="form6Example5">Email</label>
+                          <p id="errorForm1" style="visibility:hidden; color:tomato">Correo Invalido debe tener un @ y un punto.</p>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form6Example51" class="form-control" required/>
+                          <label class="form-label" for="form6Example5">Confirmación de Email</label>
+                          <p id="errorForm2" style="visibility:hidden; color:tomato">Correo Invalido debe tener un @ y un punto.</p>
                         </div>
                       
                         <!-- Number input -->
@@ -103,7 +111,7 @@
                         </div>
                       
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4">REgister</button>
+                        <button type="button" class="btn btn-primary btn-block mb-4" onclick="validCorreo()">Register</button>
                       </form>
                 </section>
                 <section>
@@ -117,5 +125,6 @@
     
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/main.js" crossorigin="anonymous"></script>
     </body>
 </html>
